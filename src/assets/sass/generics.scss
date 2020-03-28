@@ -1,0 +1,147 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+
+/************************** RESET **************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+body {
+  line-height: 1;
+  text-align: left;
+}
+
+img{
+  max-width: 100%; 
+}
+
+/************************** COLORS **************************/
+$hot-red: #D9231B;
+$pinkish-red: #D9241B;
+$black: #000000;
+$dark-grey: #111111;
+$medium-grey: #323232;
+$light-grey: #707070;
+$white: #FFFFFF;
+
+
+/************************** FONT-FAMILY **************************/
+$font-regular: 'Lato-Regular';
+$font-bold: 'Lato-Bold';
+$font-light: 'Lato-Light';
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("/assets/Lato/Lato-Bold.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/************************** FONT-SIZE **************************/
+.font-48 {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.font-32 {
+  font-size: 32px;
+}
+
+.font-22 {
+  font-size: 22px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+/************************** COLOR **************************/
+.color-white{
+  color: $white;
+}
+
+.text-left{
+text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+/************************** GENERICS **************************/
+.m-30 {
+  &.top {
+    margin-top: 30px;
+  }
+
+  &.bottom {
+    margin-bottom: 30px;
+  }
+
+  &.left {
+    margin-left: 30px;
+  }
+
+  &.right {
+    margin-right: 30px;
+  }
+}
+
+.m-20 {
+  &.top {
+    margin-top: 20px;
+  }
+
+  &.bottom {
+    margin-bottom: 20px;
+  }
+
+  &.left {
+    margin-left: 20px;
+  }
+
+  &.right {
+    margin-right: 20px;
+  }
+}
+
+.custom-button{
+  text-transform: uppercase;
+  background: transparent;
+  border: solid 2px white;
+  color: $white;
+  padding: 10px 50px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase !important;
+  font-size: 14px !important;
+  transition: ease-in-out 0.4s;
+
+  &:hover{
+    transform: scale(0.97)
+  }
+}
